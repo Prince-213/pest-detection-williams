@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
+import { Toaster } from "sonner";
 
 const satoshiSans = localFont({
   src: "./font/Satoshi-Variable.ttf",
@@ -20,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${satoshiSans.className} antialiased`}>{children}</body>
+      <body className={`${satoshiSans.className} antialiased`}>
+        <Toaster richColors position="top-right" expand={true} />
+        {children}
+      </body>
     </html>
   );
 }

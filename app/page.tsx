@@ -6,7 +6,7 @@ export default function Home() {
     <div className=" w-full min-h-screen">
       <header className=" w-full py-4">
         <div className=" w-[90%] mx-auto">
-          <h1 className=" font-semibold text-emerald-500 text-4xl">Williams</h1>
+          <h1 className=" font-semibold text-emerald-500 text-4xl uppercase">pest aware</h1>
         </div>
       </header>
       <div className=" w-full min-h-[85vh] bg-[#113D3C] relative flex items-center">
